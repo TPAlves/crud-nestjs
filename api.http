@@ -27,4 +27,35 @@ Content-Type: application/json
 
 ###
 
+GET http://localhost:3000/products/1
+###
+
+GET http://localhost:3000/products/
+###
+
+
+POST http://localhost:3000/products/
+Content-Type: application/json
+
+{
+    "name": "Produto 1",
+    "price": 7000,
+    "categoryId": 1
+}
+
+###
+PATCH  http://localhost:3000/products/2000
+Content-Type: application/json
+
+{
+    "name": "Roupa 2"
+}
+
+###
+DELETE   http://localhost:3000/products/1
+Content-Type: application/json
+
+
+###
+
 
